@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Password Generator</title>
+</head>
+<body>
+    <div class="container">
+        <div class="disp">
+            <input type="text" class="display" disabled></input>
+            <i class="fa-regular fa-clipboard" id="copy-btn">
+            </i>
+            <div id="config-area">
+                <i class="fa-solid fa-gear" id="config-btn"></i>
+            </div>
+        </div>
+        
+        <div class="buttons">
+            <button class="btn" id="run">Generate</button>
+            <button class="btn" id="save">Save</button>
+        </div>
+    </div>
+
+    <div class="configs">
+        <div class="lenght">
+            <label for="len">Lenght</label>
+            <input type="range" max="16" min="1" value="8">
+            <span>8</span>
+        </div>
+        <ul class="options">
+            <li class="option">
+                <input type="checkbox" id="upper">
+                <label for="upper">Upper</label>
+            </li>
+            <li class="option">
+                <input type="checkbox" id="num">
+                <label for="num">Numbers</label>
+            </li>
+            <li class="option">
+                <input type="checkbox" id="sym">
+                <label for="sym">Symbols</label>
+            </li>
+            <li class="option">
+                <input type="checkbox" id="space">
+                <label for="space">Spaces</label>
+            </li>
+        </ul>
+        <button class="btn" id="close">Ok</button>
+    </div>
+
+    <div class="saveMenu">
+        <h1 id="sve-text-nm">Password Name</h1>
+        <p style="font-size: 10px; color: red;"></p>
+        <input type="text" class="passName">
+        <button class="btn" id="ok">Save</button>
+    </div>
+
+    <div class="passwords">
+        
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

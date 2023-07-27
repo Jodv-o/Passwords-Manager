@@ -1,0 +1,342 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+body{
+    background: #1e90ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+}
+
+.container{
+    display: none;
+    background: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    height: 12.5em;
+    width: 23.125em;
+}
+
+.display{
+    position: relative;
+    left: 14px;
+    top: 10px;
+    padding: 10px;
+    width: 300px;
+    height: 60px;
+    border: 3px solid #555;
+    border-radius: 5px;
+    cursor: default;
+}
+
+#copy-btn{
+    position: relative;
+    top: 15px;
+    left: -20px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+#config-area{
+    background: transparent;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    transition: all .5s ease;
+    position: relative;
+    top: -35px;
+    left: 320px;
+}
+
+#config-area:hover{
+    background: #e2e2e2;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+#config-btn{
+    font-size: 20px;
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: 10px;
+    left: -5px;
+}
+
+.btn{
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    border: 4px solid #1e90ff;
+    width: 110px;
+    height: 40px;
+    margin: 0 20px;
+    padding: 5px;
+    background: #1e90ff;
+    color: #fff;
+    transform: scale(1);
+    transition:all .4s ease;
+}
+
+.btn:hover{
+    background-color: transparent;
+    color: #000;
+    cursor: pointer;
+    transform: scale(1.06);
+}
+
+.container{
+    display: block;
+}
+
+.configs{
+    background: #fff;
+    width: 18.75rem;
+    height: 15rem;
+    padding: 5px;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.lenght{
+    position: relative;
+    font-size: 16px;
+    top: -35%;
+    left: 9.55em;
+}
+
+#len{
+    position: absolute;
+}
+
+.lenght span{
+    position: absolute;
+    top: 0;
+    left: 75%;
+}
+
+.lenght label{
+    position: relative;
+    left: 25%;
+}
+
+.configs .options{
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+    position: relative;
+    left: -0.5rem;
+}
+
+.configs .options .option{
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    width: calc(100% / 2);
+}
+
+.configs .options .option label{
+    margin-right: 8rem;
+}
+
+.options .option input{
+    height: 16px;
+    width: 16px;
+    cursor: pointer;
+}
+
+.options .option label{
+    cursor: pointer;
+    color: #4f4f4f;
+    padding-left: 0.63rem;
+}
+
+#close{
+    position: relative;
+    top: 80px;
+    left: -180px;
+}
+
+.saveMenu{
+    background: #fff;
+    width: 18.75rem;
+    height: 15rem;
+    border-radius: 5px;
+    padding: 50px;
+    display: none;
+}
+
+#sve-text-nm{
+    font-size: 18px;
+    font-weight: 300;
+    transition: all .3s ease;
+}
+.saveMenu input{
+    width: 200px;
+    height: 30px;
+    border: none;
+    border-bottom: 4px solid #000;
+    cursor: text;
+}
+
+.saveMenu input:focus{
+    outline: none;
+    transition: all .4s;
+}
+
+.saveMenu button{
+    position: relative;
+    top: 3.125rem;
+    left: 1.875rem;
+}
+
+.passwords{
+    background: #fff;
+    width: 31.25rem;
+    margin: 1.25rem;
+    border-radius: 4px;
+    position: absolute;
+    top: 25rem;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.password{
+    width: 100%;
+    background-color: #f0f0f0;
+    padding: 5px 10px; 
+    display:  flex;
+    flex-direction: row;
+    border-radius: 5px;
+    height: 65px;
+    justify-content: space-between;
+    margin: 10px;
+    position: relative;
+    left: -0.625rem;
+}
+.password input{
+    border: none;
+    outline: none;
+    background: #e0e0e0;
+    width: 130px;
+    box-sizing: border-box;
+    padding: 0 5px;
+    border-radius: 6px;
+}
+.password div{
+    display: flex;
+    flex-direction: row;
+    padding: 0.625rem;
+    position: relative;
+    left: -1.5625rem;
+}
+
+.password h2{
+    position: relative;
+    top: 0.625rem;
+    font-size: 20px;
+    font-weight: 600;
+    margin-right: 15px;
+    left: -1.25rem;
+}
+
+.passwords span{
+    color: #141414;
+}
+
+@media screen and (max-width: 400px) {
+    .container{
+        transform: scale(0.8);
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .password h2{
+        font-size: 15px;
+        margin-left: 5px;
+    }
+    .eye-area{
+        transform: scale(0.8);
+    }
+    .pass-text{
+        transform: scale(0.8);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .configs{
+        width: 18.75rem;
+        height: 17.5rem;
+        padding: 6px;
+    }
+    .pass-text{
+        width: 100px;
+    }
+    .eye-area{
+        left: -17.1875rem;
+    }
+    .passwords{
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 350px){
+    .container{
+        padding: 2px;
+        height: 12.5em;
+        width: 20.125em;
+    }
+    
+    .display{
+        position: relative;
+        left: 14px;
+        top: 10px;
+        padding: 10px;
+        font-size: 16px;
+        width: 13.75em;
+        height: 3.75rem;
+        border: 3px solid #555;
+        border-radius: 5px;
+        cursor: default;
+    }
+    
+    #config-area{
+        top: -2.1875rem;
+        left: 15.55rem;
+    }
+    
+    #config-btn{
+        font-size: 22px;
+    }
+
+    .configs{
+        width: 15.75rem;
+        height: 17.5rem;
+        padding: 5px;
+    }
+
+    .configs .options{
+        left: -1rem;
+    }
+}
+
